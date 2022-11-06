@@ -272,8 +272,96 @@
         var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
         function myFunction() {
-          alert(randomItem);
-          location.reload();
+          ans = 0  
+          q1 = document.getElementsByName('radio')
+          for(i=0;i<q1.length;i++){
+            if(q1[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q2 = document.getElementsByName('radio1')
+          for(i=0;i<q2.length;i++){
+            if(q2[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q3 = document.getElementsByName('radio2')
+          for(i=0;i<q3.length;i++){
+            if(q3[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q4 = document.getElementsByName('radio3')
+          for(i=0;i<q4.length;i++){
+            if(q4[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q5 = document.getElementsByName('radio4')
+          for(i=0;i<q5.length;i++){
+            if(q5[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q6 = document.getElementsByName('radio5')
+          for(i=0;i<q6.length;i++){
+            if(q6[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q7 = document.getElementsByName('radio6')
+          for(i=0;i<q7.length;i++){
+            if(q7[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q8 = document.getElementsByName('radio7')
+          for(i=0;i<q8.length;i++){
+            if(q8[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q9 = document.getElementsByName('radio8')
+          for(i=0;i<q9.length;i++){
+            if(q9[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          q10 = document.getElementsByName('radio9')
+          for(i=0;i<q10.length;i++){
+            if(q10[i].checked == true){
+                ans++;
+                break;
+            }
+          }
+
+          console.log(ans)
+
+          if(ans == 10){
+            alert(randomItem);
+            location.reload();
+          }
+          else{
+            alert("Answer all the questions before submitting.")
+          }
         }
     </script>
 </body>
